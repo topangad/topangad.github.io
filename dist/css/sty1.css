@@ -1,0 +1,38 @@
+
+body {
+	font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+
+	/*color: #0DA6FF;*/
+	padding: 0;
+	marging: 0 auto;
+}
+
+.right {
+	float:right;	
+}
+
+.left{
+	float:left;
+	width:40%;
+	height:45px;
+	text-align: right;
+}
+
+.header {
+	top: 0;
+	margin: 0;
+	position: fixed;
+	padding : 0;
+	width: 100%;
+	opacity: 0;  
+	filter: alpha(opacity=0); 
+}
+
+ul {
+	list-style=type:none;
+
+}
+
+.headerBar li {
+	float:left;
+}

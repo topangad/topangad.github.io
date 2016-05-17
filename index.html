@@ -1,229 +1,203 @@
 <!DOCTYPE html>
 <html>
-	<head>
+	<head> 		
 		
-		<link rel="stylesheet" type="text/css" href="./dist/css/bootstrap.css">
+
+		<link href="dist/css/bootstrap.min.css" rel="stylesheet">
+	    <link href="./dist/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	    <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+	    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+		
 		<link rel="stylesheet" type="text/css" href="./dist/css/sty1.css">
+        <link rel="stylesheet" type="text/css" href="./dist/css/flip.css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
 
-		<!-- Optional theme -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+		<title>Angad K.</title>
+
 		<meta name="viewport" content="width=device-width,initial-scale=1.0">
-		<style>
-		body {
-			background-color:#E0E0E0;
-			/*background-color:lightblue;*/
-			min-height:100%;			
-		}
-	
-		.fullwidth {
-			width:100%;
-		}
-
-		.fullscreen{
-			width:100%;			
-			display:block;
-			height: 100vh;
-			left:0;
-			top:0;
-			z-index:10;
-			color:white;	
-			padding-top:50px;			
-		}
-
-		.center {
-			width:500px;			
-			margin:0 auto;
-		}
-		
-		.verticalCenter {
-		   position: relative;
-		  top: 30%;
-		  -webkit-transform: translateY(-50%);
-		  -ms-transform: translateY(-50%);
-		  transform: translateY(-50%);
-		}
-		
-		.invisible {
-			
-		}		
-		
-		#home {
-			background-image: url("./dist/images/car.jpg");			
-			width:100%;
-			background-repeat: no-repeat;			
-			background-size:cover;
-		}
-		
-		@media screen and (max-width: 300px) {
-			body {
-				background-color: lightblue;
-			}
-		}
-		
-		.rotate90 {			
-			-webkit-transform: rotate(90deg); /* Safari and Chrome */
-			-moz-transform: rotate(90deg);   /* Firefox */
-			-ms-transform: rotate(90deg);   /* IE 9 */
-			-o-transform: rotate(90deg);   /* Opera */
-			transform: rotate(90deg);
-		}
-
-		.black {
-			color:black;
-		}
-
-		.navbar {
-		   background-color: transparent;
-		   background: transparent;
-		   border-color: transparent;
-		}
-
-		/* flip css */
-		/* entire container, keeps perspective */
-			.flip-container {
-				perspective: 1000;
-			}
-				/* flip the pane when hovered */
-				.flip-container:hover .flipper, .flip-container.hover .flipper {
-					transform: rotateY(180deg);
-				}
-
-			.flip-container, .front, .back {
-				width: 320px;
-				height: 480px;
-			}
-
-			/* flip speed goes here */
-			.flipper {
-				transition: 0.6s;
-				transform-style: preserve-3d;
-
-				position: relative;
-			}
-
-			/* hide back of pane during swap */
-			.front, .back {
-				backface-visibility: hidden;
-
-				position: absolute;
-				top: 0;
-				left: 0;
-			}
-
-			/* front pane, placed above back */
-			.front {
-				z-index: 2;
-				/* for firefox 31 */
-				transform: rotateY(0deg);
-			}
-
-			/* back, initially hidden pane */
-			.back {
-				transform: rotateY(180deg);
-			}
-
-
-/*/----------------*/
-/*Vertical flip */
-			.vertical.flip-container {
-				position: relative;
-			}
-
-			.vertical .back {
-				transform: rotateX(180deg);
-			}
-
-			.vertical.flip-container .flipper {
-				transform-origin: 100% 213.5px; /* half of height */
-			}
-
-			.vertical.flip-container:hover .flipper {
-				transform: rotateX(-180deg);
-			}
-.navbar li { color: #000 } 
-
-.navbar li:hover { color: #000 } 
-
-
-		</style>
 	</head>
-	<body data-spy="scroll" data-target="#mainNavbar">
-		
-		<div class="navbar navbar-inverse " id="mainNavbar" role="navigation" style="position:fixed; z-index:100; width:100%;background-color:transparent; " >
-			<div class="container">
-				<a href="#" class = "navbar-brand"> Angad Kashyap </a>				
-				
-				<!-- For mobile view compression of header -->
-				<button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
+	
+	<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
-				<div class="collapse navbar-collapse navHeaderCollapse" >
-						<ul class="nav navbar-nav navbar-right">
-							<li class="active"> <a href="#" class = "navbar-brand"> Home </a> </li>
-							<li> <a href="#about" class = "navbar-brand"> About </a> </li>
-							<li> <a href="#projects" class = "navbar-brand"> Projects </a> </li>
-							<li> <a href="" class = "navbar-brand"> Blog </a> </li>
-							<li> <a href="#activities" class = "navbar-brand"> Activities </a> </li>
-							<li> <a href="#contact" class = "navbar-brand"> Contact </a> </li>
-						</ul>
-				</div>
-			</div>		
-		</div>
+    <!-- Navigation -->
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">
+                    <i class="fa "></i>  <span class="light"></span> 
+                        Angad Kashyap
+                </a>
+            </div>
 
-		<div id="mainContainer">
-			<div id="home" class="fullscreen">
-				<div class="row center verticalCenter">					
-						<div class="row" >					
-							<h1> Angad Kashyap </h1>
-						</div>
-						<div style="float:right;width:20%;overflow-x:hidden;">
-							<a 	href="#about">
-								<span class="center glyphicon glyphicon-chevron-down " /> 
-								<span class="center glyphicon glyphicon-chevron-down " /> 					  
-							</a>												
-						</div>
-						<div class="row">
-							<h3 > Developer. Innovator. Entrepreneur. </h3>										
-						</div>					
-				</div>				
-			</div>
-			<div id="about" class="fullscreen" style>		
-				<h2 class="center fullwidth" style="float:left;"> About me </h2>
-				<hr width="100%">  
-				<div class="center row" > 			
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#projects">Projects</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contacts</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
 
-				  <div class="col-sm-6">
-					<h4> Ed.</h4>
-					<div>
-					I am a student currently in my final year of software engineering at the University of Waterloo - expecting to graduate in April 2017.
-					I am currently looking for full time and 4 month internship opportunity for my 6th and final coop term.
-					</div>
-				  </div>
-				  <div class="col-sm-6">
-				  	<h4> Hobbies </h4> 
-				  	I love the outdoors, sports, hiking and connecting the world.
-				  	I'm always game for soccer and tennis and like to hike.
-				  </div>
-					
-				</div>				
-				
-			</div>
-			<div id="projects" class="fullscreen">
-				projects
-			</div>
-			<div id="activities" class="fullscreen">
-				activities
-			</div>
-			<div id="contact" class="fullscreen">
-				fullscreen
-			</div>
-		</div>	
+    <!-- Intro Header -->
+    <header class="intro">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h1 class="brand-heading">
+                            Angad Kashyap
+                        </h1>
+                        <p class="intro-text">
+                            University of Waterloo
+                            <br>
+                            Honors Software Engineering | 4A | 2017
+                            <br>
+                            Currently looking for my final internship and full time opportunities.</p>
+                        <a href="#about" class="btn page-scroll">
+                            <i class="fa fa-angle-double-down animated" style="font-size:48px;color:blue"></i>                            
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="container">
+        <div class="row">
+            <div class="col-sm-8 col-lg-offset-2">
+                <br>
+                <br>
+                <h1 class = "text-center"> $whoami </h1> 
+                               
+                <div class="intro-text col-lg-12 col-md-4">
+                    <br>
+                    <br>
+                    Hello there! I'm currently a Software Engineering student in my 4A term at University of Waterloo.
+                    <br>
+                    I am currently looking for my final undergrad internship for the fall 2016 term and also looking for full time opportunities.
+                    <br>
+                    <br>
+                    My foray into software started 8 years ago when I created my first website and created a semi-functional replica of Pacman using Turing.
+                    <br>
+                    <br>
+                    Since then, I have developed a passion for software engineering, playing with new technologies and finding ways to apply my skills to solve real world problems.
+                    <br>
+                    <br>
+                    Through my undergrad career and work experience primarily as Full Stack Web/Mobile dev, I have developed a keen interest for Machine Learning, Image Processing, and large scale Distributed Systems including distributed databases.
+                    <br>
+                    <br>
+                    When not coding, I enjoy reading books, exploring and playing chess!  
+                </div>                                     
+            </div>            
+        </div>       
+    </section>
+
+    <section id="projects" class="content-section text-center">
+        <div class="download-section">
+            <div class="container">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <h2>Notable Projects</h2>
+                    <p>
+                        Here are some projects
+                        that I've worked on in the past.
+                    </p>
+                    <br>
+                    <br>
+                    <div class="row">
+                        <div class="intro-text col-lg-6 col-md-4">         
+                            <img src="./dist/images/OceanEnergyMap.png" width="100%"/>
+                        </div>
+                        <div class="intro-text col-lg-6 col-md-4">
+                            <div class="flip-container row">
+                            <div class="flipper">
+                                <div class="front">
+                                    <!-- front content -->
+                                    Image Resize written in Java.
+                                </div>
+                                <div class="back">
+                                    This picture shows the energy map of an image. I implemented the Seam Carving algorithm in Java
+                                    and currently it can detect the path of minimum energy and remove that so that the main portions of the image
+                                    are not reduced. <br>It eventually will have the functionality to remove certain objects from pictures.
+                                    <br>
+                                    <br>
+                                    Check this out on <a href="http://www.github.com/topangad/imageResize"> github </a>
+                                </div>
+                            </div>
+                        </div>       
+                    </div>
+
+                    <div class="row">
+                        <div class="intro-text col-lg-6 col-md-4">         
+                            <img src="./dist/images/HologramHack.png" width="100%"/>
+                        </div>
+                        <div class="intro-text col-lg-6 col-md-4">
+                            <div class="flip-container row" >
+                                <div class="flipper">
+                                    <div class="front">
+                                        <!-- front content -->
+                                        Created a Hologram with a group of 3 others for NwHacks 2016.
+                                    </div>
+                                    <div class="back">
+                                        Created a Hologram using Unity3D with C# and built a client-server model to push new 3D models to phones.
+                                        <br>
+                                        I specifically worked on the Unity3D and C# components integrating it with the server endpoints.
+                                        <br>
+                                        <br>
+                                        Check it out on &nbsp <a href="http://devpost.com/software/visualiz3d-studio" target="_blank" class="btn btn-default btn-sm">Devpost</a>
+                                    </div>
+                                </div>
+                            </div>      
+                    </div>              
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="contact" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                
+                <ul class="list-inline banner-social-buttons">
+                    <li>
+                        <a href="https://github.com/topangad" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <p>Copyright &copy; Angad Kashyap 2016</p>
+        </div>
+    </footer>		
 		
-		<script src="dist/js/bootstrap.js"></script>
-		
+    <script src="./dist/js/jquery-2.2.3.js"></script>
+
+    <script src="./dist/js/bootstrap.min.js"></script>
+
+    <script src="./dist/js/jquery.easing.min.js"></script>
+
+    <script src="./dist/js/custom.js"></script>
 	</body>
 </html>
